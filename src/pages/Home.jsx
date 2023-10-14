@@ -7,7 +7,6 @@ export default function Home () {
     );
 }
 const homeStyle = {
-    marginTop:"30px",
-    fontSize:12,
-    color:"green"
+    color:"green",
+    fontSize:"6em"
 }
