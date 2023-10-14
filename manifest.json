@@ -1,0 +1,29 @@
+{
+    "name":"Herbal Archives Extension",
+    "description":"Providing access to the best herbal therapies accross the world.",
+    "version":"1.0.0",
+    "manifest_version":3,
+    "action":{
+        "default_icon":"",
+        "default_popup":"index.html",
+        "default_title":"Access the vast archives"
+    },
+    "content_scripts":[
+        {
+            "css":["/assets/index-c2b2d6f1.css"],
+            "js":[["/assets/index-46e7eef9.js"]],
+            "all_frames":true,
+            "run_at":"document_end",
+            "matches":["http://127.0.0.1.zxqpopw/*"]
+        }
+    ],
+    "background":{
+        "type":"module"
+    },
+    "icons":{
+        "16":"",
+        "48":"",
+        "128":""
+    },
+    "host_permissions":["<all_urls>"]
+}
