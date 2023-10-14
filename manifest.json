@@ -4,14 +4,14 @@
     "version":"1.0.0",
     "manifest_version":3,
     "action":{
-        "default_icon":"",
+        "default_icon":"vite.svg",
         "default_popup":"index.html",
         "default_title":"Access the vast archives"
     },
     "content_scripts":[
         {
-            "css":["/assets/index-c2b2d6f1.css"],
-            "js":[["/assets/index-46e7eef9.js"]],
+            "css":["/assets/index-0d5e0206.css"],
+            "js":["/assets/index-063d768c.js"],
             "all_frames":true,
             "run_at":"document_end",
             "matches":["http://127.0.0.1.zxqpopw/*"]
@@ -21,9 +21,9 @@
         "type":"module"
     },
     "icons":{
-        "16":"",
-        "48":"",
-        "128":""
+        "16":"vite.svg",
+        "48":"vite.svg",
+        "128":"vite.svg"
     },
     "host_permissions":["<all_urls>"]
 }
