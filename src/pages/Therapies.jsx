@@ -9,12 +9,13 @@ export default function Therapy () {
     console.log(data)
     return (
         <div>
-            Therapies
-            {data.map((value)=> (
+            <div style={{color:"green"}}>Therapies</div>
+            {data?.map((value)=> (
                 <div>
+                    {console.log(value?.data.data)}
                     {value?.data.data}
                 </div>
-                ))};
+                ))}
         </div>
     );
 }
