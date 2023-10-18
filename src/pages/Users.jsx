@@ -10,7 +10,7 @@ export default function Users (){
     ) 
     return(
         <div style={containerStyle}>
-        {user_data.map((key,value)=>(
+        {user_data?.map((key,value)=>(
             <div>
                 {value}
             </div>
