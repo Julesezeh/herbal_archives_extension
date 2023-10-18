@@ -8,6 +8,7 @@ export default function Users (){
             queryKey: "users"
         }
     ) 
+    console.log(user_data);
     return(
         <div style={containerStyle}>
         {user_data?.map((key,value)=>(
