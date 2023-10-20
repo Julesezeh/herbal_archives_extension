@@ -1,4 +1,4 @@
-import FetchTherapies from "../lib/fetchTherapies";
+import FetchTherapies from "../../lib/fetchTherapies";
 import { useQuery } from "react-query";
 
 export default function Therapy () {
