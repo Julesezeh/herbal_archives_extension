@@ -15,5 +15,6 @@ export default function Home () {
 }
 const homeStyle = {
     color:"green",
-    fontSize:"6em"
+    fontSize:"6em",
+    cursor:"pointer"
 }
