@@ -5,17 +5,25 @@ export default function Therapy () {
     const {data} = useQuery({
         queryKey: "therapies",
         queryFn: async () => await FetchTherapies(),
-    });
+    },[]);
     console.log(data?.data)
+    // data?.data.forEach(element => {
+    //     console.log(element)
+    // })
     return (
         <div>
-            <div style={{color:"green"}}>Therapies</div>
+            <div style={{color:"green", textAlign:"center"}}>Therapies</div>
             {data?.data?.map((value)=> (
-                <div>
-                    {console.log(value?.data.data)}
-                    {value?.data.data}
+                <div style={titleStyle}>
+                    {value.title.toUpperCase()} by {value.username}
                 </div>
                 ))}
         </div>
     );
+}
+
+const titleStyle = {
+    color:"green",
+    fontSize:20,
+    textAlign:"left"
 }
