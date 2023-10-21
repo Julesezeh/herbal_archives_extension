@@ -6,11 +6,11 @@ export default function Therapy () {
         queryKey: "therapies",
         queryFn: async () => await FetchTherapies(),
     });
-    console.log(data)
+    console.log(data?.data)
     return (
         <div>
             <div style={{color:"green"}}>Therapies</div>
-            {data?.map((value)=> (
+            {data?.data?.map((value)=> (
                 <div>
                     {console.log(value?.data.data)}
                     {value?.data.data}
