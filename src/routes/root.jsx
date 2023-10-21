@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Therapy from "../pages/Therapies";
+import Therapy from "../pages/Therapies/Therapies";
 import Home from "../pages/Home";
 import Users from "../pages/Users";
 
