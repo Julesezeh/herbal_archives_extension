@@ -1,6 +1,6 @@
 import FetchTherapies from "../../lib/fetchTherapies";
 import { useQuery } from "react-query";
-
+import Spinner from "../../assets/spinner.gif"
 export default function Therapy () {
     const {data} = useQuery({
         queryKey: "therapies",
@@ -11,6 +11,7 @@ export default function Therapy () {
     //     console.log(element)
     // })
     return (
+        data?(
         <div>
             <div style={{color:"green", textAlign:"center"}}>Therapies</div>
             {data?.data?.map((value)=> (
@@ -19,6 +20,10 @@ export default function Therapy () {
                 </div>
                 ))}
         </div>
+        ):
+        (<div>
+            <Spinner/>
+        </div>)
     );
 }
 
