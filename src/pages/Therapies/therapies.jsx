@@ -1,6 +1,6 @@
 import FetchTherapies from "../../lib/fetchTherapies";
 import { useQuery } from "react-query";
-import LoadingSpinner from "./spinner.gif"
+import LoadingSpinner from "./spinner2.gif"
 
 export default function Therapy () {
     const {data} = useQuery({
