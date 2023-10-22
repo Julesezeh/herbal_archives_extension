@@ -22,8 +22,8 @@ export default function Therapy () {
                 ))}
         </div>
         ):
-        (<div style={{backgroundColor:"black"}}>
-            <img src={LoadingSpinner} alt="spinner"/>
+        (<div >
+            <img style={{color:"black", width:"200px"}} src={LoadingSpinner} alt="spinner"/>
         </div>)
     );
 }
