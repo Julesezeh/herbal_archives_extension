@@ -1,6 +1,7 @@
 import FetchTherapies from "../../lib/fetchTherapies";
 import { useQuery } from "react-query";
-import Spinner from "../../assets/spinner.gif"
+import LoadingSpinner from "./spinner.gif"
+
 export default function Therapy () {
     const {data} = useQuery({
         queryKey: "therapies",
@@ -21,8 +22,8 @@ export default function Therapy () {
                 ))}
         </div>
         ):
-        (<div>
-            <Spinner/>
+        (<div style={{backgroundColor:"black"}}>
+            <img src={LoadingSpinner} alt="spinner"/>
         </div>)
     );
 }
