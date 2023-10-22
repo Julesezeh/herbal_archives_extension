@@ -1,6 +1,6 @@
 import FetchTherapies from "../../lib/fetchTherapies";
 import { useQuery } from "react-query";
-import LoadingSpinner from "./spinner2.gif"
+import LoadingSpinner from "./spinner3.gif"
 
 export default function Therapy () {
     const {data} = useQuery({
@@ -23,7 +23,7 @@ export default function Therapy () {
         </div>
         ):
         (<div >
-            <img style={{color:"black", width:"200px"}} src={LoadingSpinner} alt="spinner"/>
+            <img style={{color:"black", width:"100%", height:"400px"}} src={LoadingSpinner} alt="spinner"/>
         </div>)
     );
 }
