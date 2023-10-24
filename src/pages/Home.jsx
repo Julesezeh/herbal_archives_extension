@@ -17,4 +17,5 @@ const homeStyle = {
     color:"green",
     fontSize:"6em",
     cursor:"pointer"
+
 }
