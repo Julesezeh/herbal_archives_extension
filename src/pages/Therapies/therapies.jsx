@@ -1,6 +1,7 @@
 import FetchTherapies from "../../lib/fetchTherapies";
 import { useQuery } from "react-query";
 import LoadingSpinner from "./spinner3.gif"
+import { Link } from "react-router-dom";
 
 export default function Therapy () {
     const {data} = useQuery({
@@ -11,13 +12,18 @@ export default function Therapy () {
     // data?.data.forEach(element => {
     //     console.log(element)
     // })
+
     return (
         data?(
         <div>
             <div style={{color:"green", textAlign:"center"}}>Therapies</div>
             {data?.data?.map((value)=> (
                 <div style={titleStyle}>
-                    {value.title.toUpperCase()} by {value.username}
+                   <Link
+                    to={`/therapies/${value.id}/`}
+                   >
+                    {value.title.toUpperCase()}
+                    </Link>by {value.username}
                 </div>
                 ))}
         </div>
