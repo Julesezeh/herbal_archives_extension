@@ -6,19 +6,20 @@ export default function TherapyDetail () {
     const { id } = useParams();
     const {data} = useQuery({
         queryKey: "therapies",
-        queryFn: async () => await FetchTherapies(),
+        queryFn: async () => await FetchSpecificTherapy(id),
     });
 
     // console.log(data)
     //Receive PK from the browser router
-    console.log(id)
+    console.log("id",id)
+    console.log("data",data)
     return (
         <div>
             <div style={{color:"green"}}>Therapies</div>
-            {data?.map((value)=> (
+            {data?.data?.map((value)=> (
                 <div>
-                    {console.log(value?.data.data)}
-                    {value?.data.data}
+                    {console.log(value?.title)}
+                    {value?.title}
                 </div>
                 ))}
         </div>
