@@ -4,10 +4,10 @@ import { useParams } from "react-router-dom";
 
 export default function TherapyDetail () {
     const { id } = useParams();
-    // const {data} = useQuery({
-    //     queryKey: "therapies",
-    //     queryFn: async () => await FetchTherapies(),
-    // });
+    const {data} = useQuery({
+        queryKey: "therapies",
+        queryFn: async () => await FetchTherapies(),
+    });
 
     // console.log(data)
     //Receive PK from the browser router
