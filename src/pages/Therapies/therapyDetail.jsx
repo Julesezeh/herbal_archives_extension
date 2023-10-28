@@ -14,10 +14,10 @@ export default function TherapyDetail () {
     console.log("id",id)
     console.log("data",data)
     return (
-        <div>
+        <div className="grid-cols-1 flex flex-col">
             <div style={{color:"green"}}>Therapies</div>
             {data?.data?.map((value)=> (
-                <div>
+                <div className="basis-1/4">
                     {console.log(value?.title)}
                     {value?.title}
                 </div>
