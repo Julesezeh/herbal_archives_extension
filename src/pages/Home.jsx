@@ -6,17 +6,18 @@ export default function Home () {
         navigate("/therapies")
     }
     return (
-        <div style={homeStyle} onClick={()=> goToTherapies()} >
+        <div className="flex flex-col"  onClick={()=> goToTherapies()} >
 
-            Hello
+            <p>Hello</p>
+            <p>Fried</p>
             
         </div>
     );
 }
-const homeStyle = {
-    color:"green",
-    fontSize:"6em",
-    cursor:"pointer",
-    textDecoration:"none"
+// const homeStyle = {
+//     color:"green",
+//     fontSize:"6em",
+//     cursor:"pointer",
+//     textDecoration:"none"
 
-}
+// }
